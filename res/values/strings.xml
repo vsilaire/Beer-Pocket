@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Beer Pocket</string>
+
+    <string name="loading">Loading</string>
+    <string name="no_available_description">(no available description)</string>
+    <string name="non_alcoholic">(non alcoholic)</string>
+    <string name="breweries">Brewery(ies):</string>
+    <string name="loading_message">"Loading beers data…"</string>
+    <string name="first_page_notif">You\'re already on the first page.</string>
+    <string name="last_page_notif">You\'re already on the last page.</string>
+    <string name="wait">Please wait…</string>
+
+</resources>

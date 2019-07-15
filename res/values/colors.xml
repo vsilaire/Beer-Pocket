@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryText">@android:color/primary_text_light</color>
+    <color name="colorPrimaryTextDark">@android:color/primary_text_dark</color>
+    <color name="colorAccent">#feb005</color>
+    <color name="colorDarkAccent">#4d4c4a</color>
+    <color name="beer_details_background">#D9F6F5F2</color>
+    <color name="white">#DEDEDE</color>
+    <color name="light">#ffe493</color>
+    <color name="background">#ffd33f</color>
+    <color name="beer_list_row_background_pressed">#ffe493</color>
+    <color name="beer_list_row_background">#feb005</color>
+</resources>

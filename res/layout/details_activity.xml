@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme"
+    tools:context=".UI.DetailsActivity">
+
+    <include
+        android:id="@+id/details_search_view"
+        layout="@layout/search_toolbar" />
+
+    <ScrollView
+        android:id="@+id/details_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_search_view"
+        android:layout_alignParentBottom="true"
+        android:verticalScrollbarPosition="right">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/details_activity_shape"
+                android:paddingLeft="8dp"
+                android:paddingTop="12dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="48dp">
+
+                <vsilaire.beerpocket.UI.RoundedImageView
+                    android:id="@+id/details_picture_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Large Picture"
+                    android:scaleX="0.95"
+                    android:scaleY="0.95"
+                    android:scaleType="matrix" />
+
+                <TextView
+                    android:id="@+id/details_beer_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="86dp"
+                    android:layout_marginRight="86dp"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="start"
+                    android:minHeight="64dp"
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/details_picture_iv"/>
+
+                <TextView
+                    android:id="@+id/details_abv_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toStartOf="@id/details_abv_tv"
+                    android:layout_toLeftOf="@id/details_abv_tv"
+                    android:layout_below="@id/details_picture_iv"
+                    android:paddingEnd="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingBottom="8dp"
+                    android:textSize="30dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/details_breweries_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:layout_below="@id/details_beer_name_tv"
+                    android:gravity="start"
+                    android:textSize="18dp"
+                    android:textStyle="italic"
+                    android:text="@string/breweries"/>
+
+                <TextView
+                    android:id="@+id/details_breweries_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/details_breweries_text"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/details_description_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/details_breweries_lv" />
+
+            </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

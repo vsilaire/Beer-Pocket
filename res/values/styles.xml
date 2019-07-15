@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryText</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryTextDark</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/quicksand_light</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+</resources>

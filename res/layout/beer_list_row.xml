@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:background="@drawable/beer_list_row_shape"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/row_margin"
+    android:layout_marginRight="@dimen/row_margin"
+    android:layout_marginLeft="@dimen/row_margin"
+    android:theme="@style/AppTheme">
+
+    <vsilaire.beerpocket.UI.RoundedImageView
+        android:id="@+id/picture_iv"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/picture_iv"
+        android:layout_toEndOf="@id/picture_iv"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/row_margin">
+
+        <TextView
+            android:id="@+id/beer_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:autoSizeTextType="uniform"
+            android:gravity="end"
+            android:paddingLeft="24dp"
+            android:textSize="19dp"
+            android:paddingStart="24dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/abv_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="textEnd"
+            android:gravity="end"
+            android:layout_marginRight="4dp"
+            android:textStyle="italic"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="row_padding">8dp</dimen>
+    <dimen name="row_margin">12dp</dimen>
+    <dimen name="activity_margin">12dp</dimen>
+</resources>

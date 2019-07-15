@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Beer Pocket</string>
+
+    <string name="loading">Chargement</string>
+    <string name="no_available_description">(aucune description n\'est disponible)</string>
+    <string name="non_alcoholic">(sans alcool)</string>
+    <string name="breweries">Brasserie(s) :</string>
+    <string name="loading_message">"Chargement des données…"</string>
+    <string name="first_page_notif">Vous êtes déjà sur la première page.</string>
+    <string name="last_page_notif">Vous êtes déjà sur la dernière page.</string>
+    <string name="wait">Veuillez patienter…</string>
+
+</resources>

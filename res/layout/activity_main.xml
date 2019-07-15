@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.MainActivity"
+    android:theme="@style/AppTheme"
+    android:background="@color/background"
+    android:id="@+id/main_activity_layout">
+
+    <include layout="@layout/search_toolbar"
+        android:id="@+id/main_activity_search_view"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:layout_weight="20"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:paddingStart="64dp"
+        android:paddingEnd="64dp">
+
+        <Button
+            android:id="@+id/previous_page_button"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/previous_page_ico" />
+
+        <TextView
+            android:id="@+id/page_tv"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/black_circle_shape"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:textSize="20dp"
+            android:paddingEnd="1dp"
+            android:paddingRight="1dp" />
+
+        <Button
+            android:id="@+id/next_page_button"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/next_page_ico" />
+
+    </RelativeLayout>
+
+</LinearLayout>

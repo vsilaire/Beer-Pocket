@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/AppTheme"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/language_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/french_flag"
+            android:contentDescription="TODO"
+            android:layout_weight="0.5"/>
+
+        <EditText xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/search_edit_text"
+            android:layout_width="match_parent"
+            android:cropToPadding="true"
+            android:gravity="left"
+            android:adjustViewBounds="true"
+            android:layout_height="32dp"
+            android:background="@drawable/toolbar_edit_text_shape"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_weight="100"
+            android:paddingLeft="12dp"
+            android:elegantTextHeight="true" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:adjustViewBounds="true"
+            android:layout_weight="0.5"
+            android:gravity="end"
+            android:background="@drawable/search_ico"/>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>
